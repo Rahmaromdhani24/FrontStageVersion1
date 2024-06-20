@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+
+<body>
+<div class="container">
+  <div class="row mt-5">
+	  <div class="col-md-12">
+	  <table id="example" class="table table-striped" style="width:100%">
+    <thead>
+      <tr>
+        <th>Matricule</th>
+        <th>Nom</th>
+        <th>Prénom</th>
+        <th>Ville</th>
+        <th>Qualification</th>
+        <th>Age</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor ="let personnel of service.PersonnelsData ">
+        <td>{{personnel.mle}}</td>
+        <td>{{personnel.nom}}</td>
+        <td>{{personnel.prenom}}</td>
+        <td>{{personnel.ville}}</td>
+        <td>{{personnel.ville}}</td>
+        <!--td>
+            <span *ngFor="let poste of personnel.TPostes; let lastPoste = last">
+                {{ poste.qualification }}
+                <span *ngIf="!lastPoste">, </span> <!-- Ajoute une virgule si ce n'est pas le dernier poste -->
+              <!--/span>
+          </td-->
+        <td>$327,900</td>
+       </tr>
+    </tbody>
+   
+  </table>
+	  </div>
+	</div>
+</div>
+</body>
+</html>
